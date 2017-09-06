@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="header">
+  <view class="hleft">
+  <image id="logo" src="../../images/logo.jpg"></image>
+  <text>大内特供</text>
+  <image  id="search" src="../../images/search_icon.png"></image>
+  </view>
+</view>
+<view class="loopPics">
+<image src="../../images/main.jpg"></image>
+</view>
+<view class="searchBox">
+  <input confirm-type="done" placeholder="搜索" auto-focus/>
+  <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+</view>
+
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

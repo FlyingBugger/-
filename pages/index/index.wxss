@@ -1,0 +1,63 @@
+/**index.wxss**/
+.header{
+  background-color:#21282e;
+  height: 80rpx;
+
+}
+.hleft text{
+  color:#999;
+  line-height: 80rpx;
+}
+
+#search{
+  float: right;
+  width:80rpx;
+  height:80rpx;
+  transform: scale(0.5); 
+  margin-right:20rpx;
+}
+.searchBox input{
+      border-radius: 5px;
+      border:1rpx solid #21282e;
+      text-indent:30rpx;
+      box-sizing: border-box;
+      box-shadow: 0 0 0 0;
+      font-size: 30rpx;
+}
+#logo{
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  transform: scale(0.9); 
+  border-radius: 50%;
+  box-shadow:-5rpx -5rpx 5rpx white inset; 
+  margin-left:20rpx;   
+  display: inline-block;
+}
+.loopPics image{
+  width: 100%;
+}
+.searchBox{
+  width:95%;
+  margin:10rpx auto;
+}
+/*.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}*/
