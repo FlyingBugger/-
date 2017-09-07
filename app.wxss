@@ -7,4 +7,73 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
+  background:#f9f9f9;
 } 
+.main{
+  background:#f9f9f9;
+}
+/*头部*/
+#logo{
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  transform: scale(0.9); 
+  border-radius: 50%;
+  box-shadow:-5rpx -5rpx 5rpx white inset; 
+  margin-left:20rpx;   
+  display: inline-block;
+}
+.header{
+  background-color:#21282e;
+  height: 80rpx;
+}
+.hleft text{
+  color:#999;
+  line-height: 80rpx;
+}
+
+#search{
+  float: right;
+  width:80rpx;
+  height:80rpx;
+  transform: scale(0.5); 
+  margin-right:20rpx;
+}
+
+/*列表渲染*/
+
+.eachDetails{
+  border:1rpx solid #e5e5e5;
+  width:90%;
+  margin:10rpx  auto;
+  display:flex;
+  padding:15rpx 10rpx;
+  background: #fff;
+}
+
+.eachDetails image{
+  display:inline-block;
+  flex:1;
+  height:219rpx;
+  width:256rpx;
+}
+.eachDetails .Details{
+  flex: 2;
+}
+.counts {
+  color:#ff4567;
+  display:block;
+}
+.Details{
+  padding:0 25rpx;
+  font-size:34rpx;
+  color:#333;
+  font-weight: bold;
+}
+.addShopcar{
+    background-image:url(../../images/icons.png);
+    height:100rpx;
+    background-repeat:no-repeat;
+    float:right;
+    width:113rpx;
+}

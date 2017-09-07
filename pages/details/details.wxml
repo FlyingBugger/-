@@ -1,0 +1,18 @@
+<import src="../../components/header/header.wxml"/>
+<template is="header"></template>
+
+<!--logo部分-->
+
+<!--
+<scroll-view scroll-x style=" white-space: nowrap;" >
+
+  <image wx:for="{{detail}}" class="detailLogo" wx:key="index" src="{{item.imageLogo}}" ></image>
+</scroll-view>-->
+<swiper indicator-dots="true"
+  autoplay="true" interval="2000" duration="500">
+  <block wx:for="{{detail}}">
+    <swiper-item>
+      <image src="{{item.imageLogo}}" class="detailLogo"/>
+    </swiper-item>
+  </block>
+</swiper>

@@ -1,20 +1,10 @@
 /**index.wxss**/
-.header{
-  background-color:#21282e;
-  height: 80rpx;
-
-}
-.hleft text{
-  color:#999;
-  line-height: 80rpx;
-}
-
-#search{
-  float: right;
-  width:80rpx;
-  height:80rpx;
-  transform: scale(0.5); 
-  margin-right:20rpx;
+.searchBox image{
+    width:40rpx;
+    height:40rpx;
+    position:relative;
+    top:-48rpx;
+    left:92%;
 }
 .searchBox input{
       border-radius: 5px;
@@ -24,16 +14,7 @@
       box-shadow: 0 0 0 0;
       font-size: 30rpx;
 }
-#logo{
-  float: left;
-  width: 80rpx;
-  height: 80rpx;
-  transform: scale(0.9); 
-  border-radius: 50%;
-  box-shadow:-5rpx -5rpx 5rpx white inset; 
-  margin-left:20rpx;   
-  display: inline-block;
-}
+
 .loopPics image{
   width: 100%;
 }
@@ -61,3 +42,4 @@
 .usermotto {
   margin-top: 200px;
 }*/
+

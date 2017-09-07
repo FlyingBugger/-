@@ -1,0 +1,9 @@
+<template name="header">
+<view class="header">
+  <view class="hleft">
+  <image id="logo" src="../../images/logo.jpg"></image>
+  <text>大内特供</text>
+  <image  id="search" src="../../images/search_icon.png"></image>
+  </view>
+</view>
+</template>
