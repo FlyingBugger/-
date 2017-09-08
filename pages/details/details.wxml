@@ -8,11 +8,36 @@
 
   <image wx:for="{{detail}}" class="detailLogo" wx:key="index" src="{{item.imageLogo}}" ></image>
 </scroll-view>-->
-<swiper indicator-dots="true"
-  autoplay="true" interval="2000" duration="500">
-  <block wx:for="{{detail}}">
+<view class="main">
+
+<swiper indicator-dots="true" autoplay="true"
+>
+  <block wx:key="index" wx:for="{{detail.logo}}">
     <swiper-item>
-      <image src="{{item.imageLogo}}" class="detailLogo"/>
+      <image src="{{item}}" class="detailLogo"/>
     </swiper-item>
   </block>
 </swiper>
+
+<view class="detailsTag">
+<text>【包邮】汐美无花果酵素原液30ml*6瓶/盒</text>
+<text>￥298.00</text>
+<text>运费:包邮</text>
+</view>
+
+
+<!--详情-->
+<view class="tagList">
+<view class="{{tagActiveA}}" bindtap="loopTag" data-current="0">图片详情</view>
+<view class="{{tagActiveB}}" bindtap="loopTag" data-current="1">商品评价({{comment}})</view>
+</view>
+<swiper  id="details" current="{{itemIndex}}">
+    <swiper-item>1</swiper-item>
+    <swiper-item>
+    <view class="{{numIndex==0?'line':''}}" bindtap="commentswTag" data-current="0">全部</view>
+    <view class="{{numIndex==1?'line':''}}" bindtap="commentswTag" data-current="1">好评(0)</view>
+    <view class="{{numIndex==2?'line':''}}" bindtap="commentswTag" data-current="2">中评(0)</view>
+    <view class="{{numIndex==3?'line':''}}" bindtap="commentswTag" data-current="3">差评(0)</view>
+    </swiper-item>
+</swiper>
+</view>

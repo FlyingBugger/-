@@ -1,6 +1,6 @@
 <template name="details">
 <view class="lists">
-  <view class="eachDetails" wx:for="{{shops}}" data-id="{{item.id}}" wx:key="{{item.id}}" bindtap="goDetail">
+  <view class="eachDetails" wx:for="{{shops}}" data-id="{{item.id}}"  wx:key="{{item.id}}" bindtap="goDetail">
   <image src="{{item.pic}}"></image>
   <view class="Details">  <text class="dName">{{item.title}}</text>
   <text  class="counts">$<text >{{item.counts}}</text></text>

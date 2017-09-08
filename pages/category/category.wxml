@@ -1,5 +1,19 @@
 <!--index.wxml-->
 
-<import src="../../components/header/header.wxml"/>
+<import src="../../components/header/header.wxml" />
 <template is="header"></template>
 
+<view class="tagList">
+  <view  class="{{tagActiveNumber==0?'tagActive':''}}" bindtap="loopTag" data-current="0">全部商品</view>
+  <view class="{{tagActiveNumber==1?'tagActive':''}}" bindtap="loopTag" data-current="1">最热商品({{comment}})</view>
+</view>
+<swiper id="details" style="height:{{height}};" current="{{itemIndex}}">
+  <swiper-item>
+    <import src="../../components/list/list"/>
+    <template is="details" data="{{shops}}"></template>
+  </swiper-item>
+  <swiper-item>
+  <import src="../../components/list/list"/>
+    <template is="details" data="{{shops}}"></template>
+    </swiper-item>
+</swiper>

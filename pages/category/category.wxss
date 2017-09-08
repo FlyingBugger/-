@@ -1,1 +1,15 @@
 /**index.wxss**/
+.tagList{
+  display: flex;
+}
+.tagActive{
+  border-bottom: 10rpx solid #ff4567;
+}
+.tagList view{
+flex:1;
+text-align:center;
+background:#fff;
+margin:10rpx 0;
+padding:20rpx;
+color:#ff4567;
+}

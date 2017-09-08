@@ -1,7 +1,61 @@
-/* pages/differ/differ.wxss */
+
 .detailLogo{
   width: 100%;  display: inline-block;
 }
-.swiper{
-  height: 100%;
+swiper{
+  height: 482rpx;
+}
+.detailsTag text{
+  display: block;
+  background: #fff;
+  text-indent:20rpx;
+  padding:10rpx 0;
+
+}
+
+.detailsTag text:nth-child(1){
+  font-weight: bold;
+}
+ .detailsTag text:nth-child(2){
+  color: #ff4576;
+}
+.detailsTag text:nth-child(3){
+  font-size:26rpx;
+  color: #999;
+   font-family:  Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,Microsoft YaHei,PingFang SC;
+}
+#details swiper-item:nth-child(2){
+  display:flex;
+}
+#details swiper-item:nth-child(2) view{
+  flex:1;
+  text-align:center;
+  
+  height:8rpx;
+  line-height:8rpx;
+  padding:17rpx;
+
+  margin:0rpx 10rpx;
+  font-size:25rpx;
+ 
+}
+.line{
+background-color:#ff4567;
+  border-radius:8rpx;
+   color:white;
+}
+
+.tagList{
+  display: flex;
+}
+.tagList view{
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  margin: 10rpx 0;
+  padding: 20rpx;
+  color:#ff4567;
+}
+.tagActive{
+  border-bottom: 10rpx solid #ff4567;
 }

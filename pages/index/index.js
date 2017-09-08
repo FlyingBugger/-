@@ -39,16 +39,42 @@ Page({
     })
   },
   goDetail:function(e){
-    console.log(e.currentTarget.dataset.id);
+   let pid=e.currentTarget.dataset.id;
+   wx.navigateTo({
+     url: '../details/details?pid='+pid,
+   })
   },
   onLoad: function () {
     var that = this
     //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
+    app.getUserInfo(function (userInfo){
       //更新数据
+
       that.setData({
         userInfo:userInfo
       })
+    })
+wx.login({
+  success:function(res){
+    console.log(res);
+    wx.request({
+      url: 'http://9478081c.ngrok.io/main.php',
+      data:{test:'key'},
+      method:'POST',
+      success:function(res){
+        console.log(res);
+      }
+    })
+  }
+})
+    wx.getLocation({
+      type: 'wgs84',
+      success: function (res) {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        var speed = res.speed
+        var accuracy = res.accuracy
+      }
     })
   }
 })
